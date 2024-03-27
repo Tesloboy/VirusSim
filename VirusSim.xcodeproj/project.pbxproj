@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		CA4D3D612BB4B0A20084991D /* VirusSimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D602BB4B0A20084991D /* VirusSimApp.swift */; };
-		CA4D3D632BB4B0A20084991D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D622BB4B0A20084991D /* ContentView.swift */; };
 		CA4D3D652BB4B0A40084991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4D3D642BB4B0A40084991D /* Assets.xcassets */; };
 		CA4D3D682BB4B0A40084991D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4D3D672BB4B0A40084991D /* Preview Assets.xcassets */; };
+		CA4D3D6F2BB4B0C10084991D /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D6E2BB4B0C10084991D /* Parameters.swift */; };
+		CA4D3D712BB4B0DD0084991D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D702BB4B0DD0084991D /* Person.swift */; };
+		CA4D3D732BB4B0F80084991D /* SimulationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D722BB4B0F80084991D /* SimulationLogic.swift */; };
+		CA4D3D752BB4B1100084991D /* InputParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D742BB4B1100084991D /* InputParametersView.swift */; };
+		CA4D3D772BB4B12F0084991D /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D762BB4B12F0084991D /* SimulationView.swift */; };
+		CA4D3D792BB4B1B10084991D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4D3D782BB4B1B10084991D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA4D3D5D2BB4B0A20084991D /* VirusSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirusSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4D3D602BB4B0A20084991D /* VirusSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirusSimApp.swift; sourceTree = "<group>"; };
-		CA4D3D622BB4B0A20084991D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA4D3D642BB4B0A40084991D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4D3D672BB4B0A40084991D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA4D3D6E2BB4B0C10084991D /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		CA4D3D702BB4B0DD0084991D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CA4D3D722BB4B0F80084991D /* SimulationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationLogic.swift; sourceTree = "<group>"; };
+		CA4D3D742BB4B1100084991D /* InputParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParametersView.swift; sourceTree = "<group>"; };
+		CA4D3D762BB4B12F0084991D /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
+		CA4D3D782BB4B1B10084991D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				CA4D3D602BB4B0A20084991D /* VirusSimApp.swift */,
-				CA4D3D622BB4B0A20084991D /* ContentView.swift */,
+				CA4D3D782BB4B1B10084991D /* ContentView.swift */,
+				CA4D3D6E2BB4B0C10084991D /* Parameters.swift */,
+				CA4D3D702BB4B0DD0084991D /* Person.swift */,
+				CA4D3D722BB4B0F80084991D /* SimulationLogic.swift */,
+				CA4D3D742BB4B1100084991D /* InputParametersView.swift */,
+				CA4D3D762BB4B12F0084991D /* SimulationView.swift */,
 				CA4D3D642BB4B0A40084991D /* Assets.xcassets */,
 				CA4D3D662BB4B0A40084991D /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4D3D632BB4B0A20084991D /* ContentView.swift in Sources */,
+				CA4D3D732BB4B0F80084991D /* SimulationLogic.swift in Sources */,
 				CA4D3D612BB4B0A20084991D /* VirusSimApp.swift in Sources */,
+				CA4D3D792BB4B1B10084991D /* ContentView.swift in Sources */,
+				CA4D3D712BB4B0DD0084991D /* Person.swift in Sources */,
+				CA4D3D772BB4B12F0084991D /* SimulationView.swift in Sources */,
+				CA4D3D6F2BB4B0C10084991D /* Parameters.swift in Sources */,
+				CA4D3D752BB4B1100084991D /* InputParametersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
