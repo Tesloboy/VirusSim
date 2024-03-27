@@ -9,21 +9,31 @@ import SwiftUI
 
 struct SimulationView: View {
     @ObservedObject var simulationLogic: SimulationLogic
+    @Binding var showSimulation: Bool // Привязка к флагу отображения симуляции
     
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 5) // 5 столбцов
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(simulationLogic.people.indices, id: \.self) { index in
-                    LazyHGrid(rows: [GridItem(.flexible())], spacing: 10) {
-                        PersonView(person: simulationLogic.people[index]) {
-                            // Обработчик нажатия на круг
-                            simulationLogic.infectPerson(at: index)
+        VStack {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach(simulationLogic.people.indices, id: \.self) { index in
+                        LazyHGrid(rows: [GridItem(.flexible())], spacing: 10) {
+                            PersonView(person: simulationLogic.people[index]) {
+                                simulationLogic.infectPerson(at: index)
+                            }
                         }
+                        .frame(width: 50, height: 50)
                     }
-                    .frame(width: 50, height: 50) // Размеры ячейки для каждого человека
                 }
+                .padding()
+            }
+            
+            // Кнопка для возврата в меню
+            Button(action: {
+                showSimulation = false
+            }) {
+                Text("Back to Menu")
             }
             .padding()
         }
@@ -46,3 +56,4 @@ struct PersonView: View {
             }
     }
 }
+

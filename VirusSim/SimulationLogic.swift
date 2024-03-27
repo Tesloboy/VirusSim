@@ -28,7 +28,7 @@ class SimulationLogic: ObservableObject {
                 // Get neighbors to infect
                 let startIndex = max(0, index - infectionFactor)
                 let endIndex = min(people.count - 1, index + infectionFactor)
-                let neighbors = Array(people[startIndex...endIndex])
+                _ = Array(people[startIndex...endIndex])
                 
                 for neighborIndex in startIndex...endIndex {
                     if people[neighborIndex].healthStatus == .healthy {

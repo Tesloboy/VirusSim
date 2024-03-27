@@ -15,10 +15,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if showSimulation {
-                SimulationView(simulationLogic: simulationLogic)
+                SimulationView(simulationLogic: simulationLogic, showSimulation: $showSimulation)
                     .padding()
             } else {
-                InputParametersView(parameters: $parameters)
+                InputParametersView(parameters: $parameters, startSimulation: startSimulation)
                     .padding()
             }
             

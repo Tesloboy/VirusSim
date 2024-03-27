@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+
 struct InputParametersView: View {
     @Binding var parameters: Parameters
+    var startSimulation: () -> Void
     
     var body: some View {
         VStack {
@@ -26,15 +28,7 @@ struct InputParametersView: View {
             TextField("Enter update period", value: $parameters.updatePeriod, formatter: NumberFormatter())
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            
-            Button(action: {
-                // Action to start simulation
-            }) {
-                Text("Start Simulation")
-            }
-            .padding()
         }
         .padding()
     }
 }
-
